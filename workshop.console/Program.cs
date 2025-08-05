@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
+using workshop.calculator;
 using workshop.console;
 using workshop.console.Animals;
 
@@ -24,6 +25,10 @@ foreach(Car car in cars)
 }
 
 
+
+Calculator calculator = new Calculator();
+
+int result = calculator.Add(2, 2);
 //Cat cat = new Cat() { Name="Red" };
 
-Console.WriteLine();
+Console.WriteLine(result);
